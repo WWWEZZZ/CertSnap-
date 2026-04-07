@@ -8,7 +8,7 @@ In the commercial MEP sector, reaching "Practical Completion" on a project trigg
 Field engineers historically resist complex, bloated CAFM (Computer-Aided Facility Management) apps, leading to missing data, transcription errors, and severe cash-flow bottlenecks for the contractor.
 ## The Solution: Frictionless Field Data
 CertSnap eliminates data-entry friction by turning the engineer's smartphone camera into the primary data-entry tool, supported by an asynchronous AI backend.
- 1. **Snap & Extract:** An engineer snaps a photo of a boiler or HVAC nameplate. The backend instantly extracts the make, model, and serial number.
+ 1. **Snap & Extract:** An engineer snaps a photo of a boiler, HVAC or other piece of mechanical equipment nameplate. The backend instantly extracts the make, model, and serial number. It also stores the image for reference.
  2. **Automated Enrichment:** A background worker searches the internet for the exact equipment model and automatically attaches the manufacturer's PDF datasheet to the project file.
  3. **Smart Certifications:** Assets are linked to regulatory certificates (e.g., CP12, CP17). Forms are auto-filled with extracted asset data and location APIs.
  4. **Real-Time PM Dashboard:** Project Managers receive a live, collated O&M package, enabling them to hand over the project and invoice the client the moment physical works are complete.
