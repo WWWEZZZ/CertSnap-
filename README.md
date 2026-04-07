@@ -14,7 +14,7 @@ CertSnap eliminates data-entry friction by turning the engineer's smartphone cam
  3. **Smart Certifications:** Assets are linked to regulatory certificates (e.g., CP12, CP17). Forms are auto-filled with extracted asset data and location APIs.
  4. **Real-Time PM Dashboard:** Project Managers receive a live, collated O&M package, enabling them to hand over the project and invoice the client the moment physical works are complete.
 ## Architecture & Tech Stack
-CertSnap is built with a lean, highly opinionated stack prioritizing speed, offline capabilities, and secure multi-tenancy.
+CertSnap is built with a lean, highly opinionated stack prioritising speed, offline capabilities, and secure multi-tenancy.
 ### Frontend: Zero-Install PWA
  * **Vanilla HTML/CSS/JS:** Chosen over heavy SPA frameworks (React/Vue) to ensure micro-payloads and instant load times in low-connectivity boiler rooms.
  * **Offline-First (IndexedDB & Service Workers):** A robust local queue handles asset logging and certificate updates even with zero cellular signal, syncing automatically when connectivity returns.
@@ -30,4 +30,4 @@ CertSnap is built with a lean, highly opinionated stack prioritizing speed, offl
 ## Key Engineering Decisions
  * **Playwright over HTML-to-PDF Libraries:** Swapped traditional Python PDF libraries (like WeasyPrint) for Playwright. While heavier, browser-based rendering was the only way to guarantee pixel-perfect output for strict regulatory forms.
  * **Dropping Redis/Celery for Native Background Tasks:** Reduced infrastructure bloat and points of failure by moving asynchronous datasheet enrichment directly into FastAPI's native BackgroundTasks.
- * **State Machine Database:** Moved business logic down to the PostgreSQL layer wherever possible. By utilizing atomic SQL RPCs (e.g., incrementing sequential asset tags), the system safely handles highly concurrent mobile uploads.
+ * **State Machine Database:** Moved business logic down to the PostgreSQL layer wherever possible. By utilising atomic SQL RPCs (e.g., incrementing sequential asset tags), the system safely handles highly concurrent mobile uploads.
