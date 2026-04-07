@@ -1,4 +1,5 @@
 # CertSnap
+The source code for this application is currently undergoing a security and IP audit prior to public release, as it is actively being tested in a live commercial MEP environment. A full architectural breakdown is provided below, and a live demonstration is available upon request.
 **Automated MEP Asset Capture & Compliance Pipeline**
 CertSnap is a multi-tenant, offline-first compliance and asset tracking platform designed for the Mechanical, Electrical, and Plumbing (MEP) industry. It bridges the gap between field engineers and office-based project managers, automating the extraction and collation of Operations & Maintenance (O&M) manuals, datasheets, and regulatory certificates.
 ## The Problem: The "Practical Completion" Bottleneck
